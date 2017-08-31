@@ -14,6 +14,11 @@ class SigninController extends Controller
 
     public function store(Request $request)
     {
+        return $request->all();
+    }
+
+    /*public function store(Request $request)
+    {
         $attendee = new Attendee;
 
         $attendee->firstname = $request->firstname;
@@ -24,5 +29,5 @@ class SigninController extends Controller
         $attendee->newsletter = $request->newsletter;
 
         $event($attendee)->save($attendee);
-    }
+    }*/
 }
