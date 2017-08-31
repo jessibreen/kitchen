@@ -27,8 +27,7 @@ class EventController extends Controller
 
         $events->name = $request->name;
         $events->date = $request->date;
-        $events->starttime = $request->starttime;
-        $events->endtime = $request->endtime;
+        $events->time = $request->time;
 
         save($events);
     }

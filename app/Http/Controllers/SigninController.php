@@ -21,10 +21,9 @@ class SigninController extends Controller
         $attendee->event_id = $eventId;//prob not mass asignable
         $attendee->firstname = $request->firstname;
         $attendee->lastname = $request->lastname;
-        $attendee->email = $request->email;
         $attendee->role = $request->role;
         $attendee->county = $request->county;
-        $attendee->newsletter = $request->newsletter;
+        $attendee->email = $request->email;
 
         $attendee->save();
 

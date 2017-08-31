@@ -13,11 +13,6 @@
                     <label for="lastname">Last Name</label>
                     <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Last Name" required>
                 </div>
-                <div class="form-group">
-                    <label for="email">Email Address</label>
-                    <input type="text" class="form-control" id="email" name="email" placeholder="Email Address" required>
-                </div>
-
                 <label for="role">Select a role:</label>
                 <div class="radio">
                     <label><input type="radio" id="role" name="role" value="UK Student" required>UK Student</label>
@@ -32,15 +27,6 @@
                     <label><input type="radio" id="role" name="role" value="Community Member">Community Member</label>
                 </div>
 
-                {{--<div class="form-group">
-                    <label for="role">Select role:</label>
-                    <select class="form-control" id="role" name="role" placeholder="Role">
-                        <option>UK Student</option>
-                        <option>UK Staff or Faculty</option>
-                        <option>Cooperative Extension Agent</option>
-                        <option>Community Member</option>
-                    </select>
-                </div>--}}
                 <div class="form-group">
                     <label for="role">If you selected Cooperative Extention Agent, please select a county:</label>
                     <select class="form-control" id="county" name="county">
@@ -168,12 +154,10 @@
                     </select>
                 </div>
                 <label for="role">Would you like to receive our email newsletter?</label>
-                <div class="radio">
-                    <label><input type="radio" id="newsletter" name="newsletter" value="1" required>Yes</label>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="email" name="email" placeholder="Email Address">
                 </div>
-                <div class="radio">
-                    <label><input type="radio" id="newsletter" name="newsletter" value="0">No</label>
-                </div>
+
                 <button type="submit" class="btn btn-default">Submit</button>
             </form>
         </div>

@@ -13,10 +13,9 @@ class CreateAttendeesTable extends Migration {
 			$table->integer('event_id')->unsigned()->index();
 			$table->string('firstname', 25)->nullable(false);
 			$table->string('lastname', 25)->nullable(false);
-			$table->string('email', 50)->nullable(false);
 			$table->string('role', 25 )->nullable(false);
 			$table->string('county', 25)->nullable();
-            $table->boolean('newsletter')->default(TRUE);
+            $table->string('email', 50)->nullable();
 		});
 	}
 
