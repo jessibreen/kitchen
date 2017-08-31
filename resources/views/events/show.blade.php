@@ -2,11 +2,27 @@
 
 @section('content')
 
-    <h1>{{ $event->name }}</h1>
+    <div class="row">
 
-    <ul>
-        @foreach ($event->attendees as $attendees)
-            <li>{{ $attendees->firstname }}</li>
-        @endforeach
-    </ul>
+            <h1 class="text-center">{{ $event->name }}</h1>
+
+        </div>
+
+        <div class="col-md-6 col-md-offset-3">
+
+        <ul class="list-group">
+            @foreach ($event->attendees as $attendees)
+                <li class="list-group-item">{{ $attendees->firstname }}</li>
+            @endforeach
+        </ul>
+
+        </div>
+
+    </div>
+
+    <div class="col-md-6 col-md-offset-3">
+
+    <form> <a href="/signin" class="btn btn-default" role="button">Sign in</a></form>
+
+    </div>
 @stop

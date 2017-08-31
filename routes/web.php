@@ -26,7 +26,7 @@ Route::get('/events', 'EventController@index');
 
 Route::get('events/{event}', 'EventController@show');
 
-Route::post('/events', 'EventController@store');
+Route::post('/events/{event}/attendees', 'AttendeeController@store');
 
 Route::get('/signin', 'SigninController@create');
 

@@ -8,13 +8,14 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    {{--<title>{{ config('app.name', 'Laravel') }}</title>--}}
+    <title>FoodConnection Kitchen</title>
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 <body>
-    <div id="app">
+    {{--<div id="app">
         <nav class="navbar navbar-default navbar-static-top">
             <div class="container">
                 <div class="navbar-header">
@@ -69,7 +70,7 @@
                     </ul>
                 </div>
             </div>
-        </nav>
+        </nav>--}}
 
         @yield('content')
     </div>
