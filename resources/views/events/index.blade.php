@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('content')
 
-    <h1 class="text-center"> Food Connection Kitchen</h1>
+    <h1 class="text-center"> Food Connection Event Sign-In</h1>
 
     <hr>
 
@@ -20,6 +20,7 @@
                 <li class="list-group-item"><a href="/events/{{$event->id}}">{{ $event->name}}</a></li>
             @endforeach
         </ul>
+
 
         </div>
 

@@ -7,20 +7,20 @@
                 {!! csrf_field() !!}
                 <div class="form-group">
                     <label for="firstname">First Name</label>
-                    <input type="text" class="form-control" id="firstname" name="firstname" placeholder="First Name">
+                    <input type="text" class="form-control" id="firstname" name="firstname" placeholder="First Name" required>
                 </div>
                 <div class="form-group">
                     <label for="lastname">Last Name</label>
-                    <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Last Name">
+                    <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Last Name" required>
                 </div>
                 <div class="form-group">
                     <label for="email">Email Address</label>
-                    <input type="text" class="form-control" id="email" name="email" placeholder="Email Address">
+                    <input type="text" class="form-control" id="email" name="email" placeholder="Email Address" required>
                 </div>
 
                 <label for="role">Select a role:</label>
                 <div class="radio">
-                    <label><input type="radio" id="role" name="role" value="UK Student">UK Student</label>
+                    <label><input type="radio" id="role" name="role" value="UK Student" required>UK Student</label>
                 </div>
                 <div class="radio">
                     <label><input type="radio" id="role" name="role" value="UK Staff or Faculty">UK Staff or Faculty</label>
@@ -169,7 +169,7 @@
                 </div>
                 <label for="role">Would you like to receive our email newsletter?</label>
                 <div class="radio">
-                    <label><input type="radio" id="newsletter" name="newsletter" value="1">Yes</label>
+                    <label><input type="radio" id="newsletter" name="newsletter" value="1" required>Yes</label>
                 </div>
                 <div class="radio">
                     <label><input type="radio" id="newsletter" name="newsletter" value="0">No</label>
