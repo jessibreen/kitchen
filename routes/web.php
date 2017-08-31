@@ -30,4 +30,5 @@ Route::get('events/{event}', 'EventController@show');
 
 Route::get('/events/{event}/signin', 'SigninController@create');
 
+
 Route::post('/events/{event}/signin', 'SigninController@store');

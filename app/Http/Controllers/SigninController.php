@@ -15,6 +15,7 @@ class SigninController extends Controller
 
     public function store(Request $request)
     {
+
         $eventId =  Route::input('event');
         $attendee = new Attendee;
         $attendee->event_id = $eventId;//prob not mass asignable
@@ -25,11 +26,11 @@ class SigninController extends Controller
         $attendee->county = $request->county;
         $attendee->newsletter = $request->newsletter;
 
-
         $attendee->save();
 
         return redirect('/events/'. $eventId );
 
 //        $event($attendee)->save($attendee);
     }
+
 }
