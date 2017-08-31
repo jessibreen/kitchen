@@ -3,7 +3,7 @@
     <div class="container">
         <div class="row">
             <h1>Sign In</h1>
-            <form method="POST" action="/events/{{$event->id}}/attendee">
+            <form method="POST" action="/events/{{$eventId}}/signin">
                 {!! csrf_field() !!}
                 <div class="form-group">
                     <label for="firstname">First Name</label>
@@ -169,10 +169,10 @@
                 </div>
                 <label for="role">Would you like to receive our email newsletter?</label>
                 <div class="radio">
-                    <label><input type="radio" id="newsletter" name="newsletter" value="TRUE">Yes</label>
+                    <label><input type="radio" id="newsletter" name="newsletter" value="1">Yes</label>
                 </div>
                 <div class="radio">
-                    <label><input type="radio" id="newsletter" name="newsletter" value="FALSE">No</label>
+                    <label><input type="radio" id="newsletter" name="newsletter" value="0">No</label>
                 </div>
                 <button type="submit" class="btn btn-default">Submit</button>
             </form>

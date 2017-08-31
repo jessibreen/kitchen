@@ -12,7 +12,7 @@
 
         <ul class="list-group">
             @foreach ($event->attendees as $attendees)
-                <li class="list-group-item">{{ $attendees->firstname }}</li>
+                <li class="list-group-item">{{ $attendees->firstname }} {{ $attendees->lastname }}</li>
             @endforeach
         </ul>
 
@@ -22,7 +22,7 @@
 
     <div class="col-md-6 col-md-offset-3">
 
-    <form> <a href="/signin" class="btn btn-default" role="button">Sign in</a></form>
+    <form> <a href="/events/{{ $event->id }}/signin" class="btn btn-default" role="button">Sign in</a></form>
 
     </div>
 @stop
